@@ -1,0 +1,136 @@
+* {
+  line-height: 1.5;
+  font-family: "Founders Grotesk", arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #635AF2;
+  padding-top: 100px;
+  overflow: auto;
+}
+.header .swoop-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .swoop-header .container {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 0px;
+  min-height: 0px;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-left: 96px;
+  padding-right: 96px;
+  outline: none;
+  margin: 12px;
+  flex: 0 0 auto;
+}
+.header .swoop-header .container .toggler {
+  display: none;
+}
+.header .swoop-header .container .brand-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+}
+.header .swoop-header .container .brand-logo svg {
+  position: absolute;
+  left: 0;
+  height: 50px;
+  width: 150px;
+}
+.header .swoop-header .container .side-nav {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.header .swoop-header .container .side-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header .swoop-header .container .side-nav ul li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  cursor: pointer;
+}
+.header .swoop-header .container .side-nav ul .download-btn-container {
+  display: flex;
+  margin-left: 16px;
+}
+.header .swoop-header .container .side-nav ul .download-btn-container a {
+  font-size: 16px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+  border-radius: 4px;
+  border: solid 1px #695AF5;
+  color: #695AF5;
+  text-align: right;
+  cursor: pointer;
+  padding: 4px 14px;
+  letter-spacing: 0.5px;
+  box-shadow: -3px 3px 0px 0px #ff92e2;
+  transition: box-shadow 0.1s;
+  background-color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header .hero-text {
+  margin: 0 auto;
+}
+.header .hero-text h1 {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+  margin: 100px 0;
+  font-family: serif;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 767px) {
+  .header .swoop-header .container {
+    min-height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header .swoop-header .container .brand-logo svg {
+    position: relative;
+    height: 25px;
+    width: 130px;
+  }
+  .header .swoop-header .container .toggler {
+    display: block;
+  }
+  .header .swoop-header .container .side-nav {
+    display: none;
+  }
+  .header .hero-text {
+    padding: 0 15px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
